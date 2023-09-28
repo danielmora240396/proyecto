@@ -1,0 +1,242 @@
+body{
+    align-items: center;
+    justify-content: center;
+}
+/*-------Inicio de header------*/
+.mi-clase-personalizada {
+    max-width: 100px;
+    min-height: 70px;  
+}
+a{
+    text-decoration: none;
+    font-size: 21px;
+    min-width: 150px;
+    width: 1500px;
+    height: auto;
+    padding-inline-start: 70vb;
+} 
+.row{
+
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+h2{
+   font-size: 39px;
+    width: 100vh;
+    height:  auto; 
+}    
+.mi-clase-personalizada{
+  width: 50px;
+  height: auto;
+  padding: 20px 10px;
+}
+header nav{
+  flex-direction: column;
+}
+
+
+/*-------calendario------*/
+@media (min-width: 768px){
+.calendario {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+}
+ 
+
+.calendario{
+  align-items: center;
+  padding: 60 10px;
+  justify-content: center;
+  padding: 20p;
+
+}
+.calendario{
+  width: 450px;
+  background : #dfabf7;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper .calendario{
+  display: flex;
+  align-items: center;
+  padding: 29px 30px 10px;
+  justify-content: space-between;
+}
+.calendario .icons{
+  display: flex;
+}
+.calendario .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+.calendario .icons span:hover{
+  background: #f2f2f2;
+}
+.calendario .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+/*-------caledario ------*/
+/*-------form ------*/
+h2{
+    display: block;
+        color: #79AB46;
+        margin: 5px;
+        font-size:50px;
+        text-align:right;
+        margin: 20px;
+}
+.form{
+    width: 30%;
+    margin: 0 auto;
+}
+.fondo{
+        width: 100px;
+    height: auto;
+}
+.form{
+
+        background-position: center;  
+        border: none;
+}
+/*-------Form ------*/
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #8dfafa 0%,  #995ed19a 100%);
+    box-shadow: 0 20px 30px -6px #8010db80;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
+
+
+
+/*-------Footer ------*/
+
+  footer {
+    padding: 20px;
+    background-color: #1c1c1c;
+    margin: 0%;
+    column-rule-color: #1c1c1c
+  }
+  footer h3 {
+    font-size: 24px;
+    justify-content: center;
+    align-items: center; 
+    padding-inline: 30px;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+   
+  @media (max-width: 767px) {
+    footer h3 {
+        font-size: 20px;
+        justify-content: center;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Estilos para la línea responsive */
+  .responsive-line {
+    border: none;
+    height: 1px;
+    background-color: white;  
+  }
